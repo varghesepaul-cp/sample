@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced Text Analyser</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+  
+<div class="jumbotron text-center" onclick="loadHome()">
+  <h1>Advanced Text Analyser by Sanjana and Varghese</h1>
+  <p>________________________________________________________________________</p> 
+</div>
+  
+<div id="content" class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3> Sentiment Analyser </h3>
+      <p>Enter here to explore more about sentiment analysis from the given text </p>
+      <p>We can analyse the sentiment or mood from the sentence you give </p>
+      <button class="btn btn-primary" onclick="loadSentimentAnalyser()">Sentiment Analyser </button>
+    </div>
+    <div class="col-sm-4">
+      <h3>Multi-Lingual chat translator </h3>
+      <p>Use our multi lingual chat translator to send and receive messages with dynamic language translation </p>
+      <p>The sender can send the message in english and the receiver can receive the translated version in espanol dynamically </p>
+      <button class="btn btn-success"  onclick="loadChatTranslator()">Chat Translator</button>
+    </div>
+    <div class="col-sm-4">
+      <h3>On device action planner </h3>        
+      <p>Enter here to explore the world of on-device action planning platform </p>
+      <p>Embedd this feature to your chat application to set action reminder from your chats . your data wont go out of your device so dont worry about security </p>
+      <button class="btn btn-info"  onclick="loadActionPlanner()">On device action planner</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function loadHome()
+  {
+    console.log("Navigating to home page");
+    location.reload();
+    //location.
+
+  }
+
+function loadSentimentAnalyser()
+{
+console.log("Navigating to sentiment analyser");
+$(content).load("./sentimentAnalyser.html")
+}
+
+function loadChatTranslator()
+{
+  console.log("Navigating to ChatTranslator");
+  $(content).load("./ChatTranslator.html");
+
+}
+
+function loadActionPlanner()
+{
+  console.log("Navigating to ActionPlanner");
+  $(content).load("./ActionPlanner.html");
+
+}
+
+
+</script>
+</body>
+
+
+</html>
